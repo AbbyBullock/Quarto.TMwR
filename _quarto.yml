@@ -12,17 +12,25 @@ book:
   page-navigation: true
   cover-image: cover.png
   chapters:
-    - index.qmd
-    - intro.qmd
+    - part: INTRODUCTION
+      chapters:
+      - index.qmd
+      - intro.qmd
+      - 02-tidyverse.qmd
+      - 03-base-r.qmd
+    - part: MODELING BASICS
+      chapters:
+      - 04-ames.qmd
+      - 05-data-spending.qmd
 
 bibliography: references.bib
 
 format:
   html:
-    css: styles.css
     theme:
       - cosmo
       - styles.scss
+    fontsize: 0.9em
     df-print: paged
     code-fold: true
     cover-image: cover.png
